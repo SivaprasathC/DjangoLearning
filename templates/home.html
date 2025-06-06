@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>The below contents will be inserted into base.html</h1>
+    <form action="add" method="post">
+        {% csrf_token %}
+        Enter Number 1: <input type="text" name="num1"><br>
+        Enter Number 2: <input type="text" name="num2"><br>
+        <input type="submit">
+    </form>
+{% endblock %}
